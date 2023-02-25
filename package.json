@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"deploy-gh-pages":"npx gh-pages -d client/build -b gh-pages -f",
+	"build-and-deploy": "cd client && npm run build && cd ../ && npm run deploy-gh-pages"
   },
   "author": "",
   "license": "ISC",
